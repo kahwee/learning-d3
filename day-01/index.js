@@ -1,4 +1,4 @@
-d3.json("data/tweets.json",(error, data) =>{dataViz(data.tweets)});
+d3.json("../data/tweets.json",(error, data) =>{dataViz(data.tweets)});
 function dataViz(incomingData) {
 var nestedTweets = d3.nest()
 .key(d => d.user)
